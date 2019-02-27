@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/carrot/carrot",
+    "pages/friend/friend"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "兔子"
+      },
+      {
+        "pagePath": "pages/carrot/carrot",
+        "text": "萝卜"
+      },
+      {
+        "pagePath": "pages/friend/friend",
+        "text": "好友"
+      }
+    ]
+  }
+}

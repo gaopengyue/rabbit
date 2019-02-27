@@ -1,0 +1,13 @@
+<!--miniprogram/pages/carrot/carrot.wxml-->
+<view class='content'>
+  <image src='/images/luobu.png' mode='widthFix'></image>
+  <view>萝卜数量：9</view>
+  <!-- <view>拥有肥料数量：2</view> -->
+  <view>生长状态：3 / 10</view>
+  <!-- <view>tips: 萝卜不用种，定期收割，获得的数量在1-10之间波动</view>
+  <view>tips: 可以偷好友的萝卜</view> -->
+  <view>--------</view>
+  <view class='btn'>收获</view>
+  <!-- <view>使用肥料</view>
+  <view>tips: 肥料来自好友的赠送，类似王者荣耀的增金币</view> -->
+</view>

@@ -1,0 +1,11 @@
+<!--miniprogram/pages/friend/friend.wxml-->
+<view class='content'>
+  <view>好友</view>
+  <view class='flex'>
+    <view>头像</view>
+    <view> 名字名字</view>
+    <!-- <view>赠送按钮</view> -->
+  </view>
+  <!-- <view>tips: 点击查看好友的兔子和萝卜地</view> -->
+  <button>邀请好友</button>
+</view>

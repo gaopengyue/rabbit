@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.btn {
+  border: 1rpx solid #ccc;
+  padding: 3rpx 10rpx;
+  border-radius: 6rpx;
+  margin-top: 10rpx;
+}
+.flex {
+  display: flex;
+}
