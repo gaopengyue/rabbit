@@ -1,4 +1,5 @@
 //app.js
+import { getUserInfo } from './utils/utils.js'
 App({
   onLaunch: function () {
     
@@ -11,5 +12,9 @@ App({
     }
 
     this.globalData = {}
+    // 获取用户基本信息
+    getUserInfo().then(res => {
+      this.globalData.userInfo = res.userInfo
+    })
   }
 })

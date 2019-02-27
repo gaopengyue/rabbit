@@ -10,6 +10,7 @@
   padding: 3rpx 10rpx;
   border-radius: 6rpx;
   margin-top: 10rpx;
+  text-align: center;
 }
 .flex {
   display: flex;
