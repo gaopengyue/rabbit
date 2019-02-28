@@ -3,10 +3,10 @@
   <view wx:if="{{userInfo}}">
     <view wx:if="{{rabbit}}">
       <view>等级：{{rabbit.grade}} 小仙兔</view>
-      <view>经验：{{rabbit.exp}} / {{rabbit.needExp}}</view>
+      <view>真气：{{rabbit.exp}} / {{rabbit.needExp}}</view>
       <view>--------------</view>
       <view>萝卜数量：{{rabbit.lb}}</view>
-      <view class='btn' bindtap='feed'>喂养仙兔</view>
+      <view class='btn' bindtap='feed'>修炼真气</view>
       <!-- <view>tips: 喂兔子时会有随机事件</view>
       <switch checked>PK开关</switch>
       <view>查看PK记录</view> -->

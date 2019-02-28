@@ -10,6 +10,8 @@ exports.main = async (event, context) => {
     grade: 1, // 等级
     exp: 0,   // 经验
     lb: 10,   // 萝卜数量
+    needExp: 15,
+    friends: [],
     _openid: wxContext.OPENID
   }
   

@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/carrot/carrot",
-    "pages/friend/friend"
+    "pages/friend/friend",
+    "pages/history/history"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -13,11 +14,11 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "兔子"
+        "text": "仙兔"
       },
       {
         "pagePath": "pages/carrot/carrot",
-        "text": "萝卜"
+        "text": "农场"
       },
       {
         "pagePath": "pages/friend/friend",

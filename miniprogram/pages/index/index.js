@@ -9,13 +9,14 @@ Page({
    */
   data: {
     userInfo: app.globalData.userInfo,
-    rabbit: null
+    rabbit: null,
+    _id: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad (options) {
+  onLoad(options) {
     if (app.globalData.userInfo) {
       this.setData({ userInfo: app.globalData.userInfo })
       this.fetchRibbit()
@@ -31,10 +32,26 @@ Page({
       // imageUrl: '', // 图片长宽比是 5:4
     }
   },
-  feed() {
-    console.log(11111)
+  feed() {  // 修炼真气
+    if(this.data.rabbit.lb <= 0) {
+      return wx.showToast({
+        title: '萝卜不够用了，可以去农场获取',
+        icon: 'none'
+      })
+    }
+    api.feedRB(this._id).then(res => {
+      let data = res.result.data
+      if (data.exp >= data.needExp) {
+        let diff = data.exp - data.needExp
+        api.upDateGrade(diff, data.grade, this._id).then(res => { // 升级
+          this.setData({ rabbit: res.result.data })
+        })
+      } else {
+        this.setData({ rabbit: data })
+      }
+    })
   },
-  
+
   onGetUserInfo(e) {
     if (e.detail.userInfo) {
       app.globalData.userInfo = e.detail.userInfo
@@ -58,8 +75,6 @@ Page({
     })
   },
   setRB(r) {
-    let grade = r.grade
-    r.needExp = grade * 2 + grade + 12
-    this.setData({ rabbit: r }) 
+    this.setData({ rabbit: r, _id: r._id })
   }
 })
